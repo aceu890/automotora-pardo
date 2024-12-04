@@ -3,38 +3,37 @@ import Image from "next/image";
 const trucks = [
   {
     id: 1,
-    image: "/images/camiones/1_camion/2.webp", 
+    image: "/images/camiones/1_camion/2.webp",
     price: "$30,000",
     features: ["Motor V8", "Capacidad: 5 Toneladas", "4x4"],
   },
   {
     id: 2,
-    image: "/images/camiones/2_camion/1.webp", 
+    image: "/images/camiones/2_camion/1.webp",
     price: "$28,500",
     features: ["Motor 6.7L", "Transmisión Automática", "Climatizador"],
   },
   {
     id: 3,
-    image: "/images/camiones/3_camion/1.webp", 
+    image: "/images/camiones/3_camion/1.webp",
     price: "$22,000",
     features: ["Capacidad: 3 Toneladas", "Cámara de reversa", "Faros LED"],
   },
   {
     id: 4,
-    image: "/images/camiones/4_camion/1.webp", 
+    image: "/images/camiones/4_camion/1.webp",
     price: "$35,000",
     features: ["Motor Híbrido", "Suspensión Reforzada", "Pantalla Táctil"],
   },
   {
     id: 5,
-    image: "/images/camiones/5_camion/1.webp", 
+    image: "/images/camiones/5_camion/1.webp",
     price: "$26,700",
     features: ["Consumo eficiente", "Rines de Aluminio", "Frenos ABS"],
   },
   {
     id: 6,
-    image: "/images/camiones/6_camion/1.webp", 
-
+    image: "/images/camiones/6_camion/1.webp",
     price: "$29,900",
     features: ["Cabina Doble", "Faros de Xenón", "Sonido Premium"],
   },
@@ -54,10 +53,10 @@ export default function TruckCard() {
             <div className="relative h-48">
               <Image
                 src={truck.image}
-                alt={`Camión ${truck.id}`}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-t-lg"
+                alt={`Camión con ${truck.features[0]}`}
+                fill
+                className="rounded-t-lg object-cover"
+                priority
               />
             </div>
 
@@ -72,7 +71,10 @@ export default function TruckCard() {
                   </li>
                 ))}
               </ul>
-              <button className="mt-4 w-full bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition">
+              <button
+                className="mt-4 w-full bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition"
+                title={`Ver más detalles sobre el camión con ${truck.features[0]}`}
+              >
                 Más detalles
               </button>
             </div>
