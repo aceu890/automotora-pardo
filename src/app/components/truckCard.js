@@ -40,7 +40,7 @@ const trucks = [
   },
 ];
 
-export default function TruckGallery() {
+export default function TruckCard() {
   return (
     <div className="w-full py-8 bg-gray-100">
       <h1 className="text-3xl font-bold text-center mb-6">Galería de Camiones</h1>
