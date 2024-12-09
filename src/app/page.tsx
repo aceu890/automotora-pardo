@@ -5,7 +5,9 @@ import CarGallery from "./components/CarGallery";
 import WatchVideo from "./components/WatchVideo";
 import WspSection from "./components/WspSection";
 import WspFlotante from "./components/WspFlotante";
-import TruckCard from './components/TruckCard';
+import TruckCard from "./components/TruckCard";
+
+
 
 
 import Hero from "./components/hero";
