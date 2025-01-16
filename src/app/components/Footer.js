@@ -24,12 +24,12 @@ export default function Footer() {
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <Link href="http://localhost:3000/nosotros" className="hover:underline me-4 md:me-6">
+              <Link href="https://automotorapardo.cl/nosotros" className="hover:underline me-4 md:me-6">
                 Nosotros
               </Link>
             </li>
             <li>
-              <Link href="http://localhost:3000/catalogo" className="hover:underline me-4 md:me-6">
+              <Link href="https://automotorapardo.cl/catalogo" className="hover:underline me-4 md:me-6">
                 Catálogo
               </Link>
             </li>
@@ -40,7 +40,7 @@ export default function Footer() {
               </Link>
             </li> */}
             <li>
-              <Link href="http://localhost:3000/contact" className="hover:underline">
+              <Link href="https://automotorapardo.cl/nosotros" className="hover:underline">
                 Contacto
               </Link>
             </li>
