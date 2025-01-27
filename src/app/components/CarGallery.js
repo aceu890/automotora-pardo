@@ -4,10 +4,10 @@ import Link from "next/link";
 const cars = [
   {
     id: 1,
-    image: "/images/camiones/1_camion/1.webp",
-    brand: "Toyota",
-    year: 2020,
-    price: "$20,000",
+    image: "/images/camiones/1_camion/1.jpeg",
+    brand: "HINO ZXU",
+    year: 2014,
+    price: "$16.500.000",
   },
   {
     id: 2,
@@ -77,7 +77,7 @@ export default function CarGallery() {
               href={`/car/${car.id}`}
               className="bg-gray-800 text-white text-center py-2 px-4 rounded hover:bg-orange-600 transition w-full font-bold"
             >
-              Ver Auto
+              ver más
             </Link>
           </div>
         ))}

@@ -1,76 +1,112 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import BlogGallery from "./components/BlogGallery";
 // import SwiperComponent from "./components/SwiperComponent";
-import CarGallery from "./components/CarGallery";
+// import CarGallery from "./components/CarGallery";
 import WatchVideo from "./components/WatchVideo";
-import WspSection from "./components/WspSection";
+import Map from "./components/Map";
 import WspFlotante from "./components/WspFlotante";
+
 import TruckCard from "./components/TruckCard";
 
-
-
-
 import Hero from "./components/hero";
-import ViewAllButton from "./components/ViewAllButton";
+// import ViewAllButton from "./components/ViewAllButton";
 
 export const metadata: Metadata = {
   title: "Pardo Motors - Venta de Vehículos en Melipilla, Chile",
-  description: "Pardo Motors es tu opción confiable en la compra y venta de vehículos en Melipilla, Chile. Especializados en camiones y autos de calidad, ofrecemos remates y una experiencia de compra única. Con precios competitivos y atención personalizada, facilitamos la adquisición de vehículos adaptados a tus necesidades y presupuesto. Descubre nuestras ofertas y contáctanos hoy para más información. ¡Tu satisfacción es nuestra prioridad!",
-  keywords: "venta de vehículos, compra de camiones, remates en Melipilla, financiamiento de autos, autos en Chile, compra venta de vehiculos, ciudad melipilla, san antonio, santiago, pardo motors"
+  description:
+    "Pardo Motors es tu opción confiable en la compra y venta de vehículos en Melipilla, Chile. Especializados en camiones y autos de calidad, ofrecemos remates y una experiencia de compra única. Con precios competitivos y atención personalizada, facilitamos la adquisición de vehículos adaptados a tus necesidades y presupuesto. Descubre nuestras ofertas y contáctanos hoy para más información. ¡Tu satisfacción es nuestra prioridad!",
+  keywords:
+    "venta de vehículos, compra de camiones, remates en Melipilla, financiamiento de autos, autos en Chile, compra venta de vehiculos, ciudad melipilla, san antonio, santiago, pardo motors",
 };
-export default function Home() {
-  // Definición de imágenes, ahora en el ámbito del servidor
-  // const images = [
-  //   { src: "/images/autos.png", alt: "Autos" },
-  //   { src: "/images/pickups.png", alt: "Pickups" },
-  //   { src: "/images/camiones.png", alt: "Camiones" },
-  //   { src: "/images/vans.png", alt: "Vans" },
-  //   { src: "/images/motos.png", alt: "Motos" },
-  // ];
 
+// TODO: BLOGS
+const blogs = [
+  {
+    id: 1,
+    title: "Lo que debes saber de la industria",
+    description: "En este blog, exploramos los aspectos más importantes de la industria, brindando una visión general sobre sus principales desafíos, oportunidades y tendencias. Descubre lo que debes saber para comprender mejor este sector en constante evolución",
+    image: "/images/blog/1_blog.webp",
+    slug: "primer-blog",
+  },
+  {
+    id: 2,
+    title: "!Encuentra el Camión ideal!",
+    description: "Descubre el camión perfecto para tus necesidades con nuestra selección de opciones y consejos.",
+    image: "/images/blog/2_blog.webp",
+    slug: "segundo-blog",
+  },
+  {
+    id: 3,
+    title: "Como empezar un negocio de venta de vehículos",
+    description: "Guía práctica para iniciar tu propio negocio de venta de vehículos, desde la planificación hasta la estrategia de ventas.",
+    image: "/images/blog/3_blog.webp",
+    slug: "tercer-blog",
+  },
+];
+
+
+
+export default function Home() {
   return (
     <main className="overflow-x-hidden bg-gray-100">
-      {/* <h1 className="text-3xl md:text-4xl font-bold text-center my-8">
-        Automotora<span className="text-orange-500"> Pardo</span>
-      </h1> */}
       <Hero />
-    
-    <TruckCard />
+      <TruckCard />
+      {/* Contenedor para los iconos flotantes */}
 
-      {/* <div className="w-full flex justify-center items-center">
-        <SwiperComponent
-          images={images}
-          spaceBetween={15}
-          navigation={true}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          className="w-full"
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        />
-      </div> */}
+      {/* Botón flotante con el ícono de WhatsApp */}
+      <WspFlotante
+        phoneNumber="56983786259"
+        message="¡Hola! Me gustaría saber más sobre los productos."
+        buttonStyles="fixed right-4 bottom-80"
+        iconStyles="w-12 h-12"
+        iconName="wsp"
+      />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-center my-5">
-        Más <span className="text-orange-500">vistos</span>
-      </h1>
+      <WspFlotante
+        phoneNumber="56985467687"
+        message="¡Hola! Tengo una consulta sobre la oferta."
+        buttonStyles="fixed right-4 bottom-60"
+        iconStyles="w-12 h-12"
+        iconName="ig"
+      />
 
-      {/* WspFlotante puede necesitar ser Client Component si tiene interacción */}
-      <WspFlotante />
+      <WspFlotante
+        phoneNumber="1234567890"
+        message="¡Hola! Quisiera obtener más información sobre tu página."
+        buttonStyles="fixed right-4 bottom-40"
+        iconStyles="w-12 h-12"
+        iconName="face"
+      />
 
       <div>
-        <CarGallery />
-        <ViewAllButton buttonText="Ver Todo" linkUrl="http://localhost:3000/catalogo" />
+        <BlogGallery blogs={blogs} />
       </div>
+
+      {/* <WspFlotante
+        phoneNumber="0987654321"
+        message="¡Hola! Quiero saber más sobre tus videos."
+        buttonStyles="fixed right-4 bottom-20"
+        iconStyles="w-8 h-8"
+        iconName="tt"
+      /> */}
+
+      {/* TODO: CAR GALLERY */}
+      {/* <div>
+        <CarGallery />
+        <ViewAllButton
+          buttonText="Ver Todo"
+          linkUrl="http://localhost:3000/catalogo"
+        />
+      </div> */}
 
       <div>
         <WatchVideo />
       </div>
 
-      <div>
-        <WspSection />
+      <div className="flex items-center justify-center p-5">
+        {/* <WspSection /> */}
+        <Map />
       </div>
     </main>
   );
