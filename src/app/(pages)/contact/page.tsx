@@ -30,11 +30,11 @@ const Contact = () => {
             <p className="text-lg text-gray-600 leading-relaxed">
               <strong>Teléfono:</strong> +56 9 83786259
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            {/* <p className="text-lg text-gray-600 leading-relaxed">
               <strong>Email:</strong> contacto@pardomotors.com
-            </p>
+            </p> */}
             <p className="text-lg text-gray-600 leading-relaxed">
-              <strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País
+              <strong>Dirección:</strong> Eduardo morales osorio con ostolazas, melipilla
             </p>
           </motion.div>
           <h2 className="text-5xl font-bold text-gray-800 mb-6">Contáctanos</h2>
