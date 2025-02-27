@@ -57,7 +57,7 @@ export default function Home() {
       {/* Botón flotante con el ícono de WhatsApp */}
       <WspFlotante
         phoneNumber="56983786259"
-        message="¡Hola! Me gustaría saber más sobre los productos."
+        message="¡Hola! Me gustaría saber más sobre un camión"
         buttonStyles="fixed right-4 bottom-80"
         iconStyles="w-12 h-12"
         iconName="wsp"
@@ -69,6 +69,7 @@ export default function Home() {
         buttonStyles="fixed right-4 bottom-60"
         iconStyles="w-12 h-12"
         iconName="ig"
+        url="https://www.instagram.com/auto_pardotruck/"
       />
 
       <WspFlotante
@@ -77,6 +78,7 @@ export default function Home() {
         buttonStyles="fixed right-4 bottom-40"
         iconStyles="w-12 h-12"
         iconName="face"
+        url="https://www.facebook.com/Auto.pardo.cl/"
       />
 
       <div>

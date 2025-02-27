@@ -11,39 +11,18 @@ const cars = [
   },
   {
     id: 2,
-     image: "/images/camiones/2_camion/1.webp",
-    brand: "Ford",
-    year: 2019,
-    price: "$18,500",
+     image: "/images/camiones/2_camion/1.jpg",
+    brand: "Volkswagen Constellation",
+    year: 2017,
+    price: "$45,000.000",
   },
   {
     id: 3,
-     image: "/images/camiones/3_camion/1.webp",
-    brand: "Honda",
-    year: 2021,
-    price: "$22,300",
-  },
-  {
-    id: 4,
-     image: "/images/camiones/4_camion/1.webp",
-    brand: "Chevrolet",
+     image: "/images/camiones/3_camion/1.jpg",
+    brand: "Freightliner Cascadia",
     year: 2018,
-    price: "$16,700",
-  },
-  {
-    id: 5,
-     image: "/images/camiones/5_camion/1.webp",
-    brand: "Chevrolet",
-    year: 2018,
-    price: "$16,700",
-  },
-  {
-    id: 6,
-     image: "/images/camiones/6_camion/1.webp",
-    brand: "Chevrolet",
-    year: 2018,
-    price: "$16,700",
-  },
+    price: "$47.000.000",
+  }, 
 ];
 
 export default function CarGallery() {

@@ -27,7 +27,7 @@ const AboutUs = () => {
             transition={{ type: "spring", stiffness: 100 }}
           >
             <Image
-              src="/images/nosotros.jpg"
+              src="/images/nosotros.webp"
               alt="Nuestro equipo"
               width={500}
               height={300}

@@ -18,7 +18,7 @@ export default function Hero() {
           Camiones Utilitarios y más...
         </p>
         <div className="flex flex-col lg:flex-row gap-4 justify-center">
-          <Link href="http://localhost:3000/catalogo">
+          <Link href="https://automotorapardo.cl/catalogo">
             <button className="px-8 py-4 bg-yellow-400 text-black font-semibold rounded-lg hover:bg-yellow-300 transition">
               Ver Catálogo
             </button>

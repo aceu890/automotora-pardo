@@ -127,7 +127,7 @@ export default function IndividualCar() {
           </div>
 
           {/* Descargar PDF */}
-          <div className="text-center">
+          {/* <div className="text-center">
             <Link
               href="/cav.pdf"
               target="_blank"
@@ -136,7 +136,7 @@ export default function IndividualCar() {
               <FaDownload className="mr-2" />
               Descargar CAV
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
