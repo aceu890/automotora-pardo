@@ -2,7 +2,7 @@
 
 import SwiperComponent from "@/app/components/SwiperComponent";
 import Link from "next/link";
-import { FaPlayCircle, FaDownload } from "react-icons/fa";
+import { FaPlayCircle } from "react-icons/fa";
 
 export default function IndividualCar() {
   const images = [
