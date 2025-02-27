@@ -107,7 +107,7 @@ export default function IndividualCar() {
           </div>
 
           {/* Detalles adicionales */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {/* <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
               { label: "Año", value: "2014" },
               { label: "Tracción", value: "4x4" },
@@ -124,7 +124,7 @@ export default function IndividualCar() {
                 <p className="text-base font-bold">{item.value}</p>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Descargar PDF */}
           {/* <div className="text-center">
