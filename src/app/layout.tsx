@@ -15,9 +15,15 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Pardo Motors - Venta de Vehículos en Melipilla, Chile",
-  description: "Pardo Motors es tu opción confiable en la compra y venta de vehículos en Melipilla, Chile. Especializados en camiones y autos de calidad, ofrecemos remates y una experiencia de compra única. Con precios competitivos y atención personalizada, facilitamos la adquisición de vehículos adaptados a tus necesidades y presupuesto. Descubre nuestras ofertas y contáctanos hoy para más información. ¡Tu satisfacción es nuestra prioridad!",
-  keywords: "venta de vehículos, compra de camiones, remates en Melipilla, financiamiento de autos, autos en Chile, compra venta de vehiculos, ciudad melipilla, san antonio, santiago, pardo motors"
+  description:
+    "Pardo Motors es tu opción confiable en la compra y venta de vehículos en Melipilla, Chile. Especializados en camiones y autos de calidad, ofrecemos remates y una experiencia de compra única. Con precios competitivos y atención personalizada, facilitamos la adquisición de vehículos adaptados a tus necesidades y presupuesto. Descubre nuestras ofertas y contáctanos hoy para más información. ¡Tu satisfacción es nuestra prioridad!",
+  keywords:
+    "venta de vehículos, compra de camiones, remates en Melipilla, financiamiento de autos, autos en Chile, compra venta de vehiculos, ciudad melipilla, san antonio, santiago, pardo motors",
+  other: {
+    "google-site-verification": "VNR2ire25FC43yeKPnZarwWTuriDLRSmcgT3XInED-Q",
+  },
 };
+
 
 
 export default function RootLayout({
