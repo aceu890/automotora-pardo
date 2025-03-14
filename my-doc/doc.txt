@@ -2,3 +2,7 @@
 
 2. quitar vehiculo de la pagina principal: components/TruckCard.tsx quitar el ID.
 
+
+{
+  "extends": ["next/core-web-vitals", "next/typescript"]
+}
