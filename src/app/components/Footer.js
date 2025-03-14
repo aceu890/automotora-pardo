@@ -39,7 +39,7 @@ export default function Footer() {
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2025{" "}
           <Link href="#" className="hover:underline">
-            Automotora Pardo™
+            Auto.pardo™
           </Link>
           . Todos los derechos reservados.
         </span>
