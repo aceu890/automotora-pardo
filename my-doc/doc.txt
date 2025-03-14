@@ -1,0 +1,4 @@
+1. borrar vehiculo del catalogo: components/CarGallery.js quitar donde esta el ID.
+
+2. quitar vehiculo de la pagina principal: components/TruckCard.tsx quitar el ID.
+

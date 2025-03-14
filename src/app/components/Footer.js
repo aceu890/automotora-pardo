@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { FaTruckMoving } from "react-icons/fa"; // Camión moviéndose, una opción de la colección
 import Link from "next/link";
 
 export default function Footer() {
@@ -11,15 +11,10 @@ export default function Footer() {
             href="#"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-            <Image
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="Flowbite Logo"
-              width={32}
-              height={32}
-              className="h-8"
-            />
+            {/* Ícono de camión */}
+            <FaTruckMoving className="text-2xl" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Auto.pardo
+              Automotora Pardo
             </span>
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
@@ -33,12 +28,6 @@ export default function Footer() {
                 Catálogo
               </Link>
             </li>
-            {/* FIXME: */}
-            {/* <li>
-              <Link href="#" className="hover:underline me-4 md:me-6">
-                Blog
-              </Link>
-            </li> */}
             <li>
               <Link href="https://automotorapardo.cl/nosotros" className="hover:underline">
                 Contacto
