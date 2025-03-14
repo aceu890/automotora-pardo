@@ -23,7 +23,7 @@ export default function Hero() {
               Ver Catálogo
             </button>
           </Link>
-          <Link href="https://automotorapardo.cl/contact">
+          <Link href="http://localhost:3000/contact">
             <button className="px-8 py-4 bg-white text-red-700 font-semibold rounded-lg hover:bg-gray-200 transition">
               Contáctanos
             </button>

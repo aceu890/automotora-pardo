@@ -71,6 +71,12 @@ export default function IndividualCar() {
             <p className="text-sm">Año</p>
             <p className="font-bold text-base">2018</p>
           </div>
+
+          <div className="p-4">
+            <p className="text-sm">Km</p>
+            <p className="font-bold text-base">890.000km</p>
+          </div>
+
           <div className="p-4">
             <p className="text-sm">Motor</p>
             <p className="font-bold text-base">Detroi 500 HP</p>
@@ -91,6 +97,7 @@ export default function IndividualCar() {
             <p className="text-sm">Teléfono</p>
             <p className="font-bold text-base">983786259</p>
           </div>
+          
         </div>
 
         {/* <Link
@@ -103,7 +110,7 @@ export default function IndividualCar() {
         </Link> */}
 
         <div className="text-4xl font-bold text-red-600 text-center">
-          $47.000.000
+          $46.000.000
         </div>
       </div>
 

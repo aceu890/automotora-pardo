@@ -19,7 +19,7 @@ const trucks = [
   {
     id: 3,
     image: "/images/camiones/3_camion/1.jpg",
-    price: "$47.000.000",
+    price: "$46.000.000",
     features: [" Freightliner Cascadia", "Año: 2018", "18 velocidades"],
     detailsUrl: "https://automotorapardo.cl/car/3", 
   },
@@ -51,8 +51,9 @@ export default function TruckCard() {
             <h2 className="text-3xl font-bold text-gray-800 mb-4">{truck.price}</h2>
             <ul className="space-y-3">
               {truck.features.map((feature, index) => (
-                <li key={index} className="text-lg text-gray-600 flex items-center gap-3">
-                  <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+<li key={index} className="text-lg text-gray-600 flex items-center gap-3">
+                  <span className="w-3 h-3 bg-green-500 rounded-full" />
                   {feature}
                 </li>
               ))}

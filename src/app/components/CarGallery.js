@@ -21,7 +21,7 @@ const cars = [
      image: "/images/camiones/3_camion/1.jpg",
     brand: "Freightliner Cascadia",
     year: 2018,
-    price: "$47.000.000",
+    price: "$46.000.000",
   }, 
 ];
 

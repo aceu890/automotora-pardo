@@ -4,6 +4,7 @@ import BlogGallery from "./components/BlogGallery";
 // import SwiperComponent from "./components/SwiperComponent";
 // import CarGallery from "./components/CarGallery";
 import WatchVideo from "./components/WatchVideo";
+// biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
 import Map from "./components/Map";
 import WspFlotante from "./components/WspFlotante";
 
