@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link"; 
 
 const trucks = [
-  {
-    id: 1,
-    image: "/images/camiones/1_camion/1.jpeg",
-    price: "$16.500.000",
-    features: ["Marca: hino zxu", "Año: 2014", "6 velocidades"],
-    detailsUrl: "https://automotorapardo.cl/car/1", 
-  },
+  // {
+  //   id: 1,
+  //   image: "/images/camiones/1_camion/1.jpeg",
+  //   price: "$16.500.000",
+  //   features: ["Marca: hino zxu", "Año: 2014", "6 velocidades"],
+  //   detailsUrl: "https://automotorapardo.cl/car/1", 
+  // },
   {
     id: 2,
     image: "/images/camiones/2_camion/1.jpg",

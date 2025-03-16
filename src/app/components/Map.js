@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+// biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
 const Map = () => {
   return (
     <motion.div

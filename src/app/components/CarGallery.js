@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 const cars = [
-  {
-    id: 1,
-    image: "/images/camiones/1_camion/1.jpeg",
-    brand: "HINO ZXU",
-    year: 2014,
-    price: "$16.500.000",
-  },
+  // {
+  //   id: 1,
+  //   image: "/images/camiones/1_camion/1.jpeg",
+  //   brand: "HINO ZXU",
+  //   year: 2014,
+  //   price: "$16.500.000",
+  // },
   {
     id: 2,
      image: "/images/camiones/2_camion/1.jpg",
